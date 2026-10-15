@@ -1,0 +1,10 @@
+# OpenCode Go（OpenAI 互換）を LiteLLM 経由で叩く
+model_list:
+  - model_name: go/*
+    litellm_params:
+      model: openai/*
+      api_base: https://opencode.ai/zen/go/v1
+      api_key: os.environ/OPENCODE_API_KEY
+
+general_settings:
+  master_key: os.environ/LITELLM_MASTER_KEY
